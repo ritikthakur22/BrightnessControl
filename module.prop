@@ -1,0 +1,6 @@
+id=custom-min-brightness
+name=Custom Minimum Brightness
+version=v1.0
+versionCode=1
+author=Ritik Thakur
+description=Systemless RRO Overlay that natively changes Android's hardcoded minimum brightness from 379 to 20. Replaces the old script method.
