@@ -1,0 +1,11 @@
+# Packaged flashable zip archives
+*.zip
+CustomMinBrightness*.zip
+
+# System and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

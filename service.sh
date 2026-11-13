@@ -1,7 +1,9 @@
 #!/system/bin/sh
 MODDIR=${0%/*}
 
-(
-    # Start the daemon
-    sh $MODDIR/brightness_daemon.sh
-) &
+# Wait until boot completes before launching daemon
+until [ "$(getprop sys.boot_completed)" = "1" ]; do
+    sleep 1
+done
+
+sh "$MODDIR/brightness_daemon.sh" &
